@@ -138,7 +138,7 @@ app.get('/nodes/resolve', (req, res) => {
 });
 
 app.get('/wallet/generate', (req, res) => {
-    let wallet = regulator.initWallet();
+    let wallet = regulator.initWalletw();
     const response = Object.assign({},wallet,{'message' : 'New wallet has been generated!'});
 
     res.status(200).json(response);
